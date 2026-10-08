@@ -1,0 +1,14 @@
+{
+  "validated_on": "2026-10-07",
+  "python": "3.12",
+  "dbt_core": "1.12.5",
+  "dbt_duckdb": "1.9.6",
+  "duckdb": "1.4.1",
+  "data_tests_passed": 30,
+  "build_nodes_passed": 43,
+  "negative_scenarios_passed": [
+    "duplicate",
+    "missing_fx",
+    "unknown_instrument"
+  ]
+}

@@ -1,0 +1,17 @@
+name: financial_data_quality
+version: '1.0.0'
+config-version: 2
+profile: financial_data_quality
+model-paths: [models]
+seed-paths: [seeds]
+test-paths: [tests]
+analysis-paths: [analyses]
+clean-targets: [target, logs]
+models:
+  financial_data_quality:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

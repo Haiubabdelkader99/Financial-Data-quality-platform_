@@ -1,0 +1,37 @@
+version: 2
+seeds:
+- name: portfolios
+  description: Three fictional EUR portfolios and illustrative risk thresholds.
+  columns:
+  - name: portfolio_id
+    tests:
+    - unique
+    - not_null
+  - name: base_currency
+    tests:
+    - accepted_values:
+        arguments:
+          values:
+          - EUR
+- name: instruments
+  description: Fictional securities, with simplified unit-price conventions.
+  columns:
+  - name: instrument_id
+    tests:
+    - unique
+    - not_null
+  - name: currency
+    tests:
+    - accepted_values:
+        arguments:
+          values:
+          - EUR
+          - USD
+- name: prices
+  description: Synthetic end-of-day unit prices, never live market quotes.
+- name: fx_rates
+  description: Synthetic FX quotes, units of EUR per currency unit.
+- name: positions
+  description: Eighteen synthetic position records across two business dates.
+- name: custodian_totals
+  description: Independent synthetic reference; contains a deliberate EUR 50 break.

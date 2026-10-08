@@ -1,0 +1,5 @@
+instrument_id,instrument_name,asset_class,currency
+EQ_EUR_01,European Equity Basket,EQUITY,EUR
+EQ_USD_01,US Equity Basket,EQUITY,USD
+BD_EUR_01,Euro Government Bond,BOND,EUR
+BD_USD_01,US Corporate Bond,BOND,USD
